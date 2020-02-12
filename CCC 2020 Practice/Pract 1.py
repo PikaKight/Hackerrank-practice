@@ -1,9 +1,10 @@
-n = int(input())
-total = 0
-used = []
-for i in range(n):
-    if n - i >= 0 and i is not in used or n - i is not in used:
-        used.append(i)
-        total += 1
+n  = int(input())
+final = 0
+result = []
 
-print(total)
+for i in range(n):
+    if n - i >= 0 and (n - i) not in result:
+        final += 1
+        result.append(i)
+
+print(final)
